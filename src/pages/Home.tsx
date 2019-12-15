@@ -1,23 +1,29 @@
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
-import React from 'react';
+import { IonButton, IonContent, IonPage } from '@ionic/react'
+import React, { useEffect } from 'react'
+import { watchSession } from '../firebase'
+import { login, logout } from '../store/actions'
+import store from '../store'
+import './Home.css';
 
 const Home: React.FC = () => {
+  useEffect(() => watchSession((user) => {
+    if (user) {
+      store.dispatch(login(user))
+    } else {
+      store.dispatch(logout())
+    }
+  }), []);
+
   return (
     <IonPage>
-      <IonHeader>
-        <IonToolbar>
-          <IonTitle>Ionic Blank</IonTitle>
-        </IonToolbar>
-      </IonHeader>
       <IonContent className="ion-padding">
-        The world is your oyster.
-        <p>
-          If you get lost, the{' '}
-          <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/">
-            docs
-          </a>{' '}
-          will be your guide.
-        </p>
+        <h1>Ride <span>Easy</span></h1>
+        <img src="assets/ride-easy.jpg" alt="Home" />
+        <hr/>
+        <IonButton color="light" expand="full"
+          routerLink="/login">Login</IonButton>
+        <IonButton color="dark" expand="full"
+          routerLink="/register">Register</IonButton>
       </IonContent>
     </IonPage>
   );

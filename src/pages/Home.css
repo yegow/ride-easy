@@ -1,0 +1,13 @@
+.ionPadding img {
+  width: 4em;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 3.7em !important;
+  text-align: center;
+}
+
+h1 span {
+  color: #005576;
+}

@@ -1,5 +1,7 @@
 {
   "name": "ride-easy",
-  "integrations": {},
+  "integrations": {
+    "capacitor": {}
+  },
   "type": "react"
 }

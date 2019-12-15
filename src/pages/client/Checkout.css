@@ -1,0 +1,74 @@
+.checkout h3 {
+  margin-top: 40%;
+  text-align: center;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+}
+
+.stripe-form-container {
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 6px;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-rows: repeat(2, 5em) 4em;
+}
+
+.form-grid div {
+  display: flex;
+}
+
+.form-grid div:first-child {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+}
+
+.form-grid div:first-child, .form-grid div:last-child {
+  justify-content: center;
+  align-items: center;
+}
+
+.form-grid label {
+  display: block;
+}
+
+.form-grid div:nth-child(2) {
+  flex-direction: column;
+  padding: 0 .3em;
+  justify-content: space-evenly;
+}
+
+/**
+ * The CSS shown here will not be introduced in the Quickstart guide, but shows
+ * how you can use CSS to style your Element's container.
+ */
+ .StripeElement {
+  box-sizing: border-box;
+
+  height: 40px;
+
+  padding: 10px 12px;
+
+  border: 1px solid transparent;
+  border-radius: 4px;
+  background-color: white;
+
+  box-shadow: 0 1px 3px 0 #e6ebf1;
+  -webkit-transition: box-shadow 150ms ease;
+  transition: box-shadow 150ms ease;
+}
+
+.StripeElement--focus {
+  box-shadow: 0 1px 3px 0 #cfd7df;
+}
+
+.StripeElement--invalid {
+  border-color: #fa755a;
+}
+
+.StripeElement--webkit-autofill {
+  background-color: #fefde5 !important;
+}

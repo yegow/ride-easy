@@ -1,0 +1,38 @@
+.profile ion-avatar.md.hydrated {
+  width: 50%;
+  height: auto;
+  margin: 2em auto;
+}
+
+.profile h3 {
+  font-size: 30px;
+  line-height: 35px;
+  text-align: center;
+}
+
+.profile section {
+  width: 200px;
+  margin: 0 auto;
+  display: grid;
+  grid-auto-rows: 4em;
+}
+
+.profile section > div, .profile section > span > div {
+  display: flex;
+  align-items: center;
+}
+
+.profile section > div ion-icon, .profile section > span > div ion-icon {
+  width: 2em;
+  height: 2em;
+  margin-right: .75em;
+}
+
+.profile section > span > div ion-badge {
+  margin-left: .75em;
+}
+
+.profile .status-btn {
+  margin: 1em auto;
+  display: block;
+}

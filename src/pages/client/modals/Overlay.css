@@ -1,0 +1,39 @@
+.overlay {
+  margin: 0;
+  background: rgba(34, 36, 40, 0.4);
+  backdrop-filter: blur(4px);
+  height: 100vh;
+}
+
+.modal-container {
+  width: 65%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  background: #FFFFFF;
+  border-radius: 4px;
+  text-align: center;
+}
+
+svg {
+  display: block;
+  margin: auto;
+}
+
+h3 {
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 29px;
+}
+
+p {
+  font-size: 11px;
+  line-height: 11px;
+}
+
+.modal-btns  {
+  display: flex;
+  justify-content: space-evenly;
+}
