@@ -9,7 +9,7 @@
     "@ionic-native/geolocation": "^5.17.1",
     "@ionic/react": "^4.11.0",
     "@ionic/react-router": "^4.11.0",
-    "firebase": "^7.5.0",
+    "firebase": "^11.0.2",
     "ionicons": "^4.6.3",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
